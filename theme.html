@@ -163,6 +163,20 @@
           {% endif %}
       </div>
 
+    {% elif post && post.type == 'page' %}
+
+      <div class="span6 offset1 posts">
+        <div class="post whole span6">
+          <h1>{{ page.title }}</h1>
+          <div class="post-body" data-type-cleanup="true">
+            {{ page.content }}
+          </div>
+          <div class="post-footer">
+            <p class="back"><a href="/">&laquo; Go Back</a></p>
+          </div>
+        </div>
+      </div>
+
       {% elif post %}
 
       <div class="span6 offset1 posts">
@@ -173,9 +187,11 @@
               <p class="date">{{ post.created_at|format_date }}</p>
             </div>
             <div class="info-right">
+            {{ if site.disqus }}
               <p class="comments">
                 <a href="/"><i class="icon-comment"></i> 0</a>
               </p>
+              {{ endif }}
             </div>
           </div>
           <div class="post-body">
@@ -217,19 +233,6 @@
         </div>
       </div>
 
-    {% elif post.type == 'page' %}
-
-      <div class="span6 offset1 posts">
-        <div class="post whole span6">
-          <h1>{{ page.title }}</h1>
-          <div class="post-body" data-type-cleanup="true">
-            {{ page.content }}
-          </div>
-          <div class="post-footer">
-            <p class="back"><a href="/">&laquo; Go Back</a></p>
-          </div>
-        </div>
-      </div>
 
     {% endif %}
 
@@ -241,6 +244,6 @@
 
     <!-- bootstrap -->
     <script src="http://postach.io/static/themes/_assets/bootstrap/js/bootstrap.min.js" /></script>
-    
+
   </body>
 </html>
