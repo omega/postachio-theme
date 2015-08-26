@@ -809,6 +809,17 @@ div.footer ul li.link-icon a {
 }
 /* Large desktop */
 /* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  div.post div.post-body pre {
+    margin-left: -70px;
+    margin-right: -86px;
+    border: 0px none;
+    border-radius: 0px;
+  }
+  div.post div.post-body blockquote {
+    margin-left: -35px;
+  }
+}
 /* Landscape phone to portrait tablet */
 @media (min-width: 481px) and (max-width: 767px) {
   body {
@@ -844,6 +855,7 @@ div.footer ul li.link-icon a {
     margin-left: -30px;
     margin-right: -30px;
     border: 0;
+    border-radius: 0;
   }
   div.post div.post-body ul,
   div.post div.post-body ol {
