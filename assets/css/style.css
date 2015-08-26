@@ -565,6 +565,9 @@ div.post div.post-body ol li {
   font-size: 18px;
   line-height: 28px;
 }
+div.post div.post-body h2 {
+  margin-top: 40px;
+}
 div.post p {
   font-weight: 400;
   font-size: 18px;
