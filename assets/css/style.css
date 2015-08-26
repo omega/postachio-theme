@@ -836,6 +836,9 @@ div.footer ul li.link-icon a {
   body {
     padding: 0;
   }
+  div.post div.post-body pre code {
+    text-align: left;
+  }
   div.header {
     position: relative;
     height: 200px;
