@@ -807,7 +807,7 @@ div.footer ul li.link-icon a {
 /* Large desktop */
 /* Portrait tablet to landscape and desktop */
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px) {
   body {
     padding: 0;
   }
