@@ -209,69 +209,6 @@ div.posts {
 }
 
 div.post {
-    h2, h3 {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin: 0;
-        line-height: default;
-    }
-    h3 {
-        font-size: 22px;
-    }
-    p {
-        font-size: 20px;
-        line-height: 30px;
-        font-weight: 300;
-        margin: 0;
-        padding: 10px 0 10px 0;
-    }
-    ul, ol {
-        li {
-            list-style-type: square;
-            margin-left: 40px;
-            padding: 10px 0 10px 0;
-            line-height: 16pt;
-            font-size: 20px;
-            font-weight: 300;
-        }
-    }
-    blockquote {
-        font-size: 22px;
-        line-height: 32px;
-        font-weight: 700;
-        padding: 10px 0 10px 30px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-}
-
-div.post {
-    h2, h3 {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin: 0;
-        line-height: default;
-    }
-    h3 {
-        font-size: 22px;
-    }
-    p {
-        font-size: 20px;
-        line-height: 30px;
-        font-weight: 300;
-        margin: 0;
-        padding: 10px 0 10px 0;
-    }
-    ul, ol {
-        li {
-            list-style-type: square;
-            margin-left: 40px;
-            padding: 10px 0 10px 0;
-            line-height: 16pt;
-            font-size: 20px;
-            font-weight: 300;
-        }
-    }
     blockquote {
         font-size: 22px;
         line-height: 32px;
@@ -292,19 +229,30 @@ div.post {
         border-bottom: 0;
         padding-bottom: 60px;
     }
-	div.post-body {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
+    div.post-body {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
 
-    .post-content {
-      .content(30px);
+        .post-content {
+          .content(30px);
+        }
+        ul, ol {
+            li {
+                list-style-type: square;
+                margin-left: 40px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
     }
-	}
     p {
         font-weight: 400;
         font-size: 18px;
         line-height: 28px;
+        margin: 0;
+        padding: 10px 0 10px 0;
         &.read-more,
         &.back {
             font-size: 16px;
@@ -339,6 +287,7 @@ div.post {
         margin-top: 0;
         padding-top: 0;
         color: @black;
+        line-height: default;
         a {
             color: @black;
             &:hover {
@@ -346,13 +295,12 @@ div.post {
             }
         }
     }
-    div.post-body ul,
-    div.post-body ol {
-        li {
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 28px;
-        }
+    h3 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0;
+        font-size: 22px;
+        line-height: default;
     }
     div.post-info {
         display: block;
