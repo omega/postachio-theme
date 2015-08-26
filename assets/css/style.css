@@ -842,6 +842,10 @@ div.footer ul li.link-icon a {
     margin-right: -30px;
     border: 0;
   }
+  div.post div.post-body ul,
+  div.post div.post-body ol {
+    text-align: left;
+  }
   div.header {
     position: relative;
     height: 200px;
