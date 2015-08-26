@@ -817,6 +817,7 @@ div.footer ul li.link-icon a {
   div.post div.post-body pre {
     margin-left: -70px;
     margin-right: -86px;
+    padding-left: 30px;
   }
   div.post div.post-body blockquote {
     margin-left: -35px;
